@@ -8,5 +8,9 @@ for (let i = 0; i < 256; i++) {
     square.style.boxSizing = "border-box";
     square.style.border = "1px solid black";
 
+    square.addEventListener("mouseover", function() {
+        square.style.backgroundColor = "blue";
+    });
+
     container.appendChild(square);
 }
