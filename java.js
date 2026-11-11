@@ -1,11 +1,4 @@
-const container = document.createElement("div");
-
-
-container.style.display = "flex";
-container.style.flexWrap = "wrap";
-container.style.width = "400px";
-container.style.height = "400px";
-
+const container = document.getElementById("container");
 
 for (let i = 0; i < 256; i++) {
     const square = document.createElement("div");
@@ -17,6 +10,3 @@ for (let i = 0; i < 256; i++) {
 
     container.appendChild(square);
 }
-
-
-document.body.appendChild(container);
